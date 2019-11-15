@@ -492,7 +492,6 @@ class MyListTile extends StatelessWidget {
     this.imageUrl,
     this.scale,
   });
-  
 
   @override
   Widget build(BuildContext context) {
@@ -503,8 +502,8 @@ class MyListTile extends StatelessWidget {
           leading: Container(
             // margin: EdgeInsets.only(top: 8),
             child: InkWell(
-              onTap: () => html.window.open('youtubeUrl', 'route'),
-              child: Image.asset('images/youtube.png'),
+              onTap: () => html.window.open(youtubeUrl, 'route'),
+              child: Image.asset('images/youtube.png', scale: 2),
             ),
           ),
           title: Text(
