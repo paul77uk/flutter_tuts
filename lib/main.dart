@@ -503,11 +503,8 @@ class MyListTile extends StatelessWidget {
           leading: Container(
             // margin: EdgeInsets.only(top: 8),
             child: InkWell(
-              onTap: () => html.window.open(youtubeUrl, 'route'),
-              child: Icon(
-                FontAwesomeIcons.youtube,
-                color: Colors.red,
-              ),
+              onTap: () => html.window.open('youtubeUrl', 'route'),
+              child: Image.asset('images/youtube.png'),
             ),
           ),
           title: Text(
